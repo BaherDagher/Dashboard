@@ -1,6 +1,6 @@
 # 🧩 Admin Dashboard - Next.js
 
-A responsive and modern admin dashboard built with **Next.js**, **Redux Toolkit**, **Recharts**, **Tailwind CSS**,  **Formik**,  **Yup** and **Firebase**. The dashboard includes user authentication, a dynamic data table with pagination and filtering, and interactive charts. Designed with mobile-first responsiveness in mind.
+A responsive and modern admin dashboard built with **Next.js**, **Redux Toolkit**, **Recharts**, **Tailwind CSS**,  **Formik**,  **Yup**, **Framer Motion** and **Firebase**. The dashboard includes user authentication, a dynamic data table with pagination and filtering, and interactive charts. Designed with mobile-first responsiveness in mind.
 
 ---
 
@@ -22,6 +22,9 @@ A responsive and modern admin dashboard built with **Next.js**, **Redux Toolkit*
 - 💅 **UI & Styling**
   - Built entirely with **Tailwind CSS**
   - Fully responsive design
+  
+- 💅 **Animation**
+  - Built with **Framer Motion**
 
 - 🛠️ Well-structured, scalable folder architecture
 - ✨ Clean, accessible UI and animations
@@ -36,6 +39,7 @@ A responsive and modern admin dashboard built with **Next.js**, **Redux Toolkit*
 - **Validation**: Formik + Yup
 - **Charts**: Recharts
 - **Table**: react-data-table-component
+- **Animation**: Framer Motion
 
 ---
 
