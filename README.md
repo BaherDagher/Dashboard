@@ -39,8 +39,8 @@ A responsive and modern admin dashboard built with **Next.js**, **Redux Toolkit*
 
 ---
 
-## 🧩 Folder Structure
-
+<pre><code>## 🧩 Folder Structure
+```
 dashboard/
 ├── public/                    # Static assets (images, icons, etc.)
 ├── src/
@@ -55,8 +55,10 @@ dashboard/
 ├── package.json               # Project dependencies and scripts
 ├── tailwind.config.js         # Tailwind CSS configuration
 └── next.config.js             # Next.js configuration
-
+```
+</code></pre>
 ---
+
 
 ## 📦 Getting Started
 
