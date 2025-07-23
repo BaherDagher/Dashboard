@@ -41,13 +41,20 @@ A responsive and modern admin dashboard built with **Next.js**, **Redux Toolkit*
 
 ## 🧩 Folder Structure
 
-Dashboard/
-        ├── src/
-                ├── app/                 # App router structure
-                ├── components/          # Reusable UI components (forms, charts, navbar)
-                ├── firebase/            # Firebase config and helper functions
-                ├── redux/               # Redux Toolkit store and slices
-                ├── Data/                # Dashboard Data
+dashboard/
+├── public/                    # Static assets (images, icons, etc.)
+├── src/
+│   ├── app/                   # Next.js App Router pages and layout
+│   ├── components/            # Reusable UI components (forms, charts, navbar, etc.)
+│   ├── firebase/              # Firebase configuration and helper functions
+│   ├── redux/                 # Redux Toolkit store, slices, and hooks
+│   ├── Data/                  # Static or mock data used in the dashboard
+│   └── styles/                # Global styles (if using a styles folder)
+├── .env.local                 # Environment variables (Firebase credentials)
+├── README.md                  # Project overview and instructions
+├── package.json               # Project dependencies and scripts
+├── tailwind.config.js         # Tailwind CSS configuration
+└── next.config.js             # Next.js configuration
 
 ---
 
@@ -56,8 +63,8 @@ Dashboard/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/admin-dashboard-next.git
-cd admin-dashboard-next
+git clone https://github.com/BaherDagher/Dashboard
+cd Dashboard
 ```
 
 ### 2. Install Dependencies
@@ -129,5 +136,5 @@ This dashboard was built with scalability and maintainability in mind:
 For questions or suggestions:
 
 Baher Osama Farouk Dagher
-📧 baherosama5828@example.com
+📧 baherosama5828@gmail.com
 🌐 https://www.linkedin.com/in/baher-dagher/
