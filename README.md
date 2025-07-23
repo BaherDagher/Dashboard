@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧩 Admin Dashboard - Next.js
 
-## Getting Started
+A responsive and modern admin dashboard built with **Next.js**, **Redux Toolkit**, **Recharts**, **Tailwind CSS**,  **Formik**,  **Yup** and **Firebase**. The dashboard includes user authentication, a dynamic data table with pagination and filtering, and interactive charts. Designed with mobile-first responsiveness in mind.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🔐 **Authentication (Firebase)**
+  - Email/Password Registration & Login
+  - Google Sign-In
+  - 🔁 Forgot Password (Reset via Email with validation + email existence check)
+  - Form validation powered by **Formik** and **Yup** for all forms
+
+- 📊 **Dashboard**
+  - Dynamic **charts** built with **Recharts**
+  - Data table with sorting, filtering, pagination (`react-data-table-component`)
+
+- 🧠 **State Management**
+  - Global state using **Redux Toolkit**
+
+- 💅 **UI & Styling**
+  - Built entirely with **Tailwind CSS**
+  - Fully responsive design
+
+- 🛠️ Well-structured, scalable folder architecture
+- ✨ Clean, accessible UI and animations
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: Next.js (App Router), React, Tailwind CSS
+- **Auth/DB**: Firebase (Auth + Firestore)
+- **State**: Redux Toolkit
+- **Validation**: Formik + Yup
+- **Charts**: Recharts
+- **Table**: react-data-table-component
+
+---
+
+## 🧩 Folder Structure
+
+Dashboard/
+        ├── src/
+                ├── app/                 # App router structure
+                ├── components/          # Reusable UI components (forms, charts, navbar)
+                ├── firebase/            # Firebase config and helper functions
+                ├── redux/               # Redux Toolkit store and slices
+                ├── Data/                # Dashboard Data
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/admin-dashboard-next.git
+cd admin-dashboard-next
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3.Setup Firebase
+
+1.	Go to console.firebase.google.com and create a new project
+
+2.	After the project is created, click on the Web (</>) icon to register a new web app.
+	•	Enter a nickname for your app (e.g., admin-dashboard) and click “Register app”.
+
+3.	Firebase will now show your Firebase configuration object. It looks like this:
+
+             const firebaseConfig = {
+                                        apiKey: "your_api_key",
+                                        authDomain: "your_project.firebaseapp.com",
+                                        projectId: "your_project_id",
+                                        storageBucket: "your_project.appspot.com",
+                                        messagingSenderId: "your_sender_id",
+                                        appId: "your_app_id",
+                                        measurementId: "your_measurement_id"
+                                    };
+
+4.	Create a .env.local file in the root directory of your project and paste your credentials like this: 
+
+    •	NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+	•	NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+    •   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+    •   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+    •   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+    •   NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id 
+    •   NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=your_measurement
+
+    !!! NOTE: Ensure the environment variables are correctly named as shown. These values are exposed to the browser, so prefix them with NEXT_PUBLIC_ !!!
+
+5.	In the Firebase console, go to Authentication > Sign-in method, and enable:
+	•	Email/Password
+	•	Google Sign-In
+
+6.	Go to Firestore Database, create a new database in test mode (for development).
+
+
+### 4. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧠 Implementation Approach
 
-## Learn More
+This dashboard was built with scalability and maintainability in mind:
 
-To learn more about Next.js, take a look at the following resources:
+	•	Authentication is handled through Firebase using both email/password and Google providers.
+	•	Form Validation is centralized with Yup + Formik for consistency across login, register and forget password.
+	•	Redux Toolkit is used to globally manage user and data state.
+	•	Charts are implemented with Recharts to visualize dummy analytics.
+	•	UI is made modular with Tailwind for a clean, responsive, and professional design.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📬 Contact
 
-## Deploy on Vercel
+For questions or suggestions:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Baher Osama Farouk Dagher
+📧 baherosama5828@example.com
+🌐 https://www.linkedin.com/in/baher-dagher/
